@@ -229,11 +229,14 @@
         <script src="js/main.js"></script>
         <script src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
         <script>$(document).ready(function(){
-            $('table').DataTable({
-                "order": [[ 0, "desc" ]]
-              } );
-            } );
-          </script>
+            $('table').DataTable( {
+                "order": [[ 0, "desc" ]],
+            "scrollY":        "150px",
+            "scrollCollapse": true,
+            "paging":         false
+          } );
+        } );
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
