@@ -18,7 +18,7 @@
     </style>
     </head>
     <body>
-      <table>
+      <table id="example">
     <thead>
         <tr>
             <th>Year</th>
@@ -229,8 +229,10 @@
         <script src="js/main.js"></script>
         <script src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
         <script>$(document).ready(function(){
-            $('table').DataTable();
-          });
+            $('table').DataTable({
+                "order": [[ 0, "desc" ]]
+              } );
+            } );
           </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
