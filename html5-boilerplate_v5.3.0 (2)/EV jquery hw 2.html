@@ -40,11 +40,13 @@
 
         <script>$(document).ready(function() {
           $('#sky').jQlouds();
-        });</script>
-        <script>
+          });
         $('#sky').jQlouds({
           minClouds: 3,
-          maxClouds: 5, 
+          maxClouds: 5,
+          });
+          $('#sky').jQlouds({
+            wind: true
           });
         </script>
 
